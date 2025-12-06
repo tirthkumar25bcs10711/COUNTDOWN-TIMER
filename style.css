@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-box {
+    background: white;
+    width: 360px;
+    padding: 40px;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0px black;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.display-area h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+    transition: opacity 0.2s;
+}
+
+.input-area.disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    width: 80px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid black;
+    font-family: inherit;
+    font-weight: bold;
+    outline: none;
+    background: #fff;
+}
+
+input[type="number"]:focus {
+    background: #fffbe6;
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.colon {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: 10px;
+    transition: all 0.1s;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.btn-black:hover {
+    background-color: #333;
+}
+
+.btn-outline {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 0px black;
+}
+
+.btn-outline:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-red {
+    background-color: #ff4757;
+    color: white;
+    border-color: black;
+    box-shadow: 4px 4px 0px black;
+}
+
+.btn-red:hover {
+    background-color: #ff6b81;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
